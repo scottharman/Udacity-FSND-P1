@@ -31,7 +31,7 @@ main_page_head = '''
         img {
             -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
             animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-            #background: #d8d8d8;
+            background: #d8d8d8;
             border: 2px solid rgba(0, 0, 0, 0.12);
             border-radius: 4px;
             display: block;
@@ -82,7 +82,7 @@ main_page_head = '''
             width: 100%;
             left: 0;
             top: 0;
-            background-color: white;
+            background-color: ddd;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
