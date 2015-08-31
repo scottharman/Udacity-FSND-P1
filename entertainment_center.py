@@ -1,6 +1,7 @@
 import media
 import fresh_tomatoes
 
+# adding 3 movies
 aliens = media.Movie("Aliens",
      "Stranded on a hostile environment, the crew of the Nostromo struggle for survival against an unknown force",
      "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Aliens_poster.jpg/220px-Aliens_poster.jpg",
@@ -16,12 +17,14 @@ jurassic_world = media.Movie("Jurassic World",
       "Waiting for it to come out on Bluray")
 
 terminator = media.Movie("Terminator: Genisys",
-      "Damn, showing my age now - I remember when this came out the first time.",
+      "I'm showing my age - I still remember when this came out the first time.  It was Awesome.",
       "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Terminator_Genisys.JPG/220px-Terminator_Genisys.JPG",
       "https://www.youtube.com/watch?v=jNU_jrPxs-0",
       "Arnie - he'll be back.  I'm sure of it.",
       "T-1000")
 
+# creating an array of 3 movies to pass to fresh_tomatoes
 movies_array = [aliens,jurassic_world,terminator]
+# fresh tomatoes will generate a static HTML page based on the movies passed in through the array above.
 fresh_tomatoes.open_movies_page(movies_array)
 

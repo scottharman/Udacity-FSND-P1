@@ -13,12 +13,11 @@
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
-            margin: 0 auto;
+            margin: 10px auto;
             padding: 2em 2em 4em;
             font-family: "abel", Helvetica, sans-serif;
             font-size: 16px;
             line-height: 1.5em;
-            bgcolor: #ddd;
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
         }
         img {
@@ -28,8 +27,8 @@
             border: 2px solid rgba(0, 0, 0, 0.12);
             border-radius: 4px;
             display: block;
-            margin: 0.6em auto;
-            max-width: 95%;
+            margin: 20px auto;
+            max-width: 96%;
         }
 
         hr {
@@ -57,11 +56,16 @@
             height: 100%;
         }
         .movie-tile {
+            margin: 40px auto;
             margin-bottom: 20px;
-            padding-top: 20px;
+            padding: 40px;
+            background-color: #eee;
+            -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+            animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+            border: 2px solid rgba(0, 0, 0, 0.12);
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: #ddd;
             cursor: pointer;
         }
         .scale-media {
@@ -77,6 +81,12 @@
             top: 0;
             background-color: ddd;
         }
+        #storyline {
+            font-size: 1.1em;
+        }
+
+
+
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -124,7 +134,7 @@
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">Scott's Favourite Movie Database</a>
           </div>
         </div>
       </div>
@@ -132,27 +142,33 @@
     <div class="container">
       
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="zNE0dlHcmgA" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Aliens_poster.jpg/220px-Aliens_poster.jpg" width="220" height="342">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Aliens_poster.jpg/220px-Aliens_poster.jpg" width="220" height="342" alt="Aliens:Stranded on a hostile environment, the crew of the Nostromo struggle for survival against an unknown force">
     <h2>Aliens</h2>
     <b>Sigourney Weaver</b>
     <hr/>
     4.8 Xenomorphs
+    <hr/>
+    <span id="storyline">Stranded on a hostile environment, the crew of the Nostromo struggle for survival against an unknown force</span>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="RFinNxS5KN4" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Jurassic_World_poster.jpg/220px-Jurassic_World_poster.jpg" width="220" height="342">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Jurassic_World_poster.jpg/220px-Jurassic_World_poster.jpg" width="220" height="342" alt="Jurassic World:Once again, someone tries to help life find a way, and Starlord has to step in to save the day">
     <h2>Jurassic World</h2>
     <b>Chris Pratt (Starlord)</b>
     <hr/>
     Waiting for it to come out on Bluray
+    <hr/>
+    <span id="storyline">Once again, someone tries to help life find a way, and Starlord has to step in to save the day</span>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="jNU_jrPxs-0" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Terminator_Genisys.JPG/220px-Terminator_Genisys.JPG" width="220" height="342">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Terminator_Genisys.JPG/220px-Terminator_Genisys.JPG" width="220" height="342" alt="Terminator: Genisys:I'm showing my age - I still remember when this came out the first time.  It was Awesome.">
     <h2>Terminator: Genisys</h2>
     <b>Arnie - he'll be back.  I'm sure of it.</b>
     <hr/>
     T-1000
+    <hr/>
+    <span id="storyline">I'm showing my age - I still remember when this came out the first time.  It was Awesome.</span>
 </div>
 
     </div>

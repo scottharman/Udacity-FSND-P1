@@ -20,12 +20,11 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
-            margin: 0 auto;
+            margin: 10px auto;
             padding: 2em 2em 4em;
             font-family: "abel", Helvetica, sans-serif;
             font-size: 16px;
             line-height: 1.5em;
-            bgcolor: #ddd;
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
         }
         img {
@@ -35,8 +34,8 @@ main_page_head = '''
             border: 2px solid rgba(0, 0, 0, 0.12);
             border-radius: 4px;
             display: block;
-            margin: 0.6em auto;
-            max-width: 95%;
+            margin: 20px auto;
+            max-width: 96%;
         }
 
         hr {
@@ -64,11 +63,16 @@ main_page_head = '''
             height: 100%;
         }
         .movie-tile {
+            margin: 40px auto;
             margin-bottom: 20px;
-            padding-top: 20px;
+            padding: 40px;
+            background-color: #eee;
+            -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+            animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+            border: 2px solid rgba(0, 0, 0, 0.12);
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: #ddd;
             cursor: pointer;
         }
         .scale-media {
@@ -84,6 +88,12 @@ main_page_head = '''
             top: 0;
             background-color: ddd;
         }
+        #storyline {
+            font-size: 1.1em;
+        }
+
+
+
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -135,7 +145,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">Scott's Favourite Movie Database</a>
           </div>
         </div>
       </div>
@@ -152,11 +162,13 @@ main_page_content = '''
 # SAH: Added starring and rating from media.py
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
+    <img src="{poster_image_url}" width="220" height="342" alt="{movie_title}:{storyline}">
     <h2>{movie_title}</h2>
     <b>{starring}</b>
     <hr/>
     {rating}
+    <hr/>
+    <span id="storyline">{storyline}</span>
 </div>
 '''
 
@@ -180,7 +192,8 @@ def create_movie_tiles_content(movies):
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id,
             starring=movie.starring,
-            rating=movie.rating
+            rating=movie.rating,
+            storyline=movie.storyline
         )
     return content
 

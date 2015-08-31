@@ -4,7 +4,14 @@ Project work for the Udacity Full Stack programme
 
 ## Instructions
 
-Firstly, clone the project, then execute entertainment_center.py in python
+Either clone the repository to a local folder, or download the zip file following the links on the righthand side of the page
+
+### Running
+
+From your commandline execute
+    python entertainment_center.py
+
+If you wish to view a static version of the website, you can simply load the fresh_tomatoes.html
 
 ### Changelog
 
