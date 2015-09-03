@@ -11,7 +11,9 @@ class Movie():
         self.rating = rating
 
     def show_trailer(self):
+    	"""open the url for the movie trailer"""
         webbrowser.open(self.trailer_url)
 
+# no longer required - was there to test
 #    def to_string(self):
 #        return self.title + ": " + self.storyline

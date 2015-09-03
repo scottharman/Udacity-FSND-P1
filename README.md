@@ -8,7 +8,7 @@ Either clone the repository to a local folder, or download the zip file followin
 
 ### Running
 
-From your commandline execute
+From your commandline execute, or execute entertainment_center.py from you Python IDE
     python entertainment_center.py
 
 If you wish to view a static version of the website, you can simply load the fresh_tomatoes.html

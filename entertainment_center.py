@@ -2,13 +2,14 @@ import media
 import fresh_tomatoes
 
 # adding 3 movies
+# define move object for Aliens, added star and rating.
 aliens = media.Movie("Aliens",
      "Stranded on a hostile environment, the crew of the Nostromo struggle for survival against an unknown force",
      "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Aliens_poster.jpg/220px-Aliens_poster.jpg",
      "https://www.youtube.com/watch?v=zNE0dlHcmgA",
      "Sigourney Weaver",
      "4.8 Xenomorphs")
-
+# added star and ratings for each film
 jurassic_world = media.Movie("Jurassic World",
       "Once again, someone tries to help life find a way, and Starlord has to step in to save the day",
       "https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Jurassic_World_poster.jpg/220px-Jurassic_World_poster.jpg",
