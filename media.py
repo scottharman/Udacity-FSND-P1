@@ -1,8 +1,19 @@
 import webbrowser
 
+
 # SAH Added starring and rating to default movie class
 class Movie():
-    def __init__(self,movie_title,movie_storyline,poster_url,trailer_youtube, starring, rating):
+    """ Class Movie
+    This adds the init module to create an object of type, 'Movie'
+    which contains it's title. storyline, poster image, trailer,
+    star and an arbitrary rating.
+    """
+    def __init__(self, movie_title, movie_storyline, poster_url,
+                 trailer_youtube, starring, rating):
+        """ docstring for the init constructor
+        this allows us to store all the standard variables for the default
+        movie class
+        """
         self.title = movie_title
         self.storyline = movie_storyline
         self.poster_image_url = poster_url
@@ -11,7 +22,9 @@ class Movie():
         self.rating = rating
 
     def show_trailer(self):
-    	"""open the url for the movie trailer"""
+        """show_trailer() docstring
+        this returns a webbrowser call to open the provided url
+        """
         webbrowser.open(self.trailer_url)
 
 # no longer required - was there to test
